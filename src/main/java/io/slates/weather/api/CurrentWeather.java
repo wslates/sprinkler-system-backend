@@ -1,0 +1,66 @@
+
+package io.slates.weather.api;
+
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class CurrentWeather {
+
+    @SerializedName("lat")
+    @Expose
+    private Double lat;
+    @SerializedName("lon")
+    @Expose
+    private Integer lon;
+    @SerializedName("timezone")
+    @Expose
+    private String timezone;
+    @SerializedName("timezone_offset")
+    @Expose
+    private Integer timezoneOffset;
+    @SerializedName("daily")
+    @Expose
+    private List<Daily> daily = null;
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public void setLat(Double lat) {
+        this.lat = lat;
+    }
+
+    public Integer getLon() {
+        return lon;
+    }
+
+    public void setLon(Integer lon) {
+        this.lon = lon;
+    }
+
+    public String getTimezone() {
+        return timezone;
+    }
+
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
+    }
+
+    public Integer getTimezoneOffset() {
+        return timezoneOffset;
+    }
+
+    public void setTimezoneOffset(Integer timezoneOffset) {
+        this.timezoneOffset = timezoneOffset;
+    }
+
+    public List<Daily> getDaily() {
+        return daily;
+    }
+
+    public void setDaily(List<Daily> daily) {
+        this.daily = daily;
+    }
+
+}
