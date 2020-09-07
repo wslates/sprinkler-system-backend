@@ -13,7 +13,6 @@ public class Zone {
     @Indexed(unique = true)
     private Integer gpio;
     private Double area;
-    @Transient
     private Boolean status;
 
     public Zone() {
